@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container light">
+      <div class="icon-box">
+        <i class="fa-solid fa-toggle-off" id="mode"></i>
+        <i class="fa-solid fa-palette" id="theme"></i>
+      </div>
+
+      <div class="clock-container">
+        <div class="sign">Rolex</div>
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+        <div class="dot"></div>
+        <div class="top">12</div>
+        <div class="right">3</div>
+        <div class="bottom">6</div>
+        <div class="left">9</div>
+
+        <div class="date-strip">
+          <div class="date-content">
+            <div class="day-date" id="current-day-date">
+              <span id="current-day"></span>
+              <span id="current-date"></span>
+            </div>
+            <div class="day-date" id="next-day-date">
+              <span id="next-day"></span>
+              <span id="next-date"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="datetime">
+        <div class="time"></div>
+        <div class="date"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/5a354bf965.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
